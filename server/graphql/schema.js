@@ -8,7 +8,7 @@ const {
 } = require("graphql");
 const axios = require("axios");
 
-const users = require(`${__dirname}/model`);
+let users = require(`${__dirname}/model`);
 
 function getArrays(url) {
   return axios.get(url).then(response => response.data);

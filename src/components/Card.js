@@ -14,9 +14,7 @@ const Card = props => {
         {(loading, err, deletePerson) => {
           return (
             <div>
-              <button
-                onClick={() => deletePerson({ variables: { id: props.id } })}
-              >
+              <button onClick={() => deletePerson({ variables: { id } })}>
                 Delete
               </button>
               {loading && <p>Loading...</p>}
